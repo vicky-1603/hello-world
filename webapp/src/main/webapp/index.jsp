@@ -11,7 +11,7 @@
             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="vicky@graycelltech.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Addrss</label>
             <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input type="text" id="city" name="city" placeholder="New York">
