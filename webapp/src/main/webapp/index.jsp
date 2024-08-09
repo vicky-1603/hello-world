@@ -1,25 +1,49 @@
 
 
-<div class="container">
-  <form action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<!DOCTYPE html>
+<html>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<head>
+      <title>HTML Login Form</title>
+      <link rel="stylesheet" href="style.css">
+</head>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+<body>
+      <div class="main">
+            <h1>GeeksforGeeks</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text"
+                         id="first"
+                         name="first"
+                         placeholder="Enter your Username" required>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password"
+                         name="password"
+                         placeholder="Enter your Password" required>
 
-    <input type="submit" value="Submit">
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="#"
+                     style="text-decoration: none;">
+                        Create an account
+                  </a>
+            </p>
+      </div>
+</body>
 
-  </form>
-</div>
+</html>
