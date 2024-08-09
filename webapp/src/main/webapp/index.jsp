@@ -3,100 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>AWS Free Tier</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #232f3e;
+            padding: 10px 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f9f9f9;
         }
-        .container {
+        header img {
+            height: 30px;
+        }
+        nav {
             display: flex;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 900px;
-            width: 100%;
+            gap: 20px;
         }
-        .form-section {
-            padding: 40px;
-            flex: 1;
-        }
-        .form-section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .form-section p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .form-section input[type="text"],
-        .form-section input[type="email"],
-        .form-section select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-section input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .form-section a {
-            color: #00f;
+        nav a {
+            color: #fff;
             text-decoration: none;
         }
-        .form-section button {
-            width: 100%;
-            padding: 15px;
-            border: none;
-            background-color: #00aaff;
-            color: #fff;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
+        .main-content {
+            padding: 100px 20px;
         }
-        .image-section {
-            flex: 1;
-            background: url('signup_image.png') no-repeat center center;
-            background-size: cover;
+        .main-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .main-content a {
+            background-color: #f90;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #232f3e;
+            padding: 10px 20px;
+            color: #bbb;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="form-section">
-            <h2>Ready to start your success story?</h2>
-            <p>Signup to our website and start leafing through your favorite literature today!</p>
-            <form>
-                <label for="fullname">Full name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+    <header>
+        <img src="aws_logo.png" alt="AWS Logo">
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">Solutions</a>
+            <a href="#">Pricing</a>
+            <a href="#">Documentation</a>
+            <a href="#">Learn</a>
+            <a href="#">Support</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="janedoe@mail.com">
-
-                <label for="interest">Area of Interest</label>
-                <select id="interest" name="interest">
-                    <option value="">Select an area</option>
-                    <!-- Add more options as needed -->
-                </select>
-
-                <label>
-                    <input type="checkbox" name="terms"> I agree to the <a href="#">Terms & Conditions</a>
-                </label>
-
-                <button type="submit">Sign up</button>
-            </form>
-        </div>
-        <div class="image-section"></div>
+    <div class="main-content">
+        <h1>AWS Free Tier</h1>
+        <p>Gain free, hands-on experience with the AWS products and services</p>
+        <a href="#">Create a Free Account</a>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
