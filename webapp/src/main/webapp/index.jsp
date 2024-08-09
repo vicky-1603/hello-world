@@ -74,7 +74,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
+        <p>&copy; 2026 Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
     </footer>
 </body>
 </html>
