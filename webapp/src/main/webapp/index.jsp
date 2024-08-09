@@ -108,19 +108,3 @@
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
                 <button type="submit">Login</button>
-            </form>
-            <a href="#">Forgot Password...?</a>
-            <div class="social-login">
-                <p>Or Sign Up With</p>
-                <i class="fab fa-facebook-f">f</i>
-                <i class="fab fa-twitter">t</i>
-                <i class="fab fa-vk">v</i>
-            </div>
-        </div>
-    </div>
-    <footer>
-        ©2018 Stunning sign up & login Form. All Rights Reserved | Design by W3Layouts
-    </footer>
-</body>
-</html>
-
