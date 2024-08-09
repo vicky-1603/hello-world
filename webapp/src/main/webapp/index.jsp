@@ -1,120 +1,81 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>AWS Free Tier</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background: url('background_image.png') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .login-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-        }
-        .login-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            background-color: #000;
+            color: #fff;
             text-align: center;
         }
-        .login-form img {
-            max-width: 100px;
-            margin-bottom: 20px;
-        }
-        .login-form input[type="text"], .login-form input[type="password"] {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-        }
-        .login-form button {
-            padding: 15px 0;
-            width: 100%;
-            background-color: #ff6b6b;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        .login-form button:hover {
-            background-color: #ff4c4c;
-        }
-        .login-form .options {
+        header {
+            background-color: #232f3e;
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
-            color: #fff;
-            font-size: 14px;
+            align-items: center;
         }
-        .login-form .options a {
+        header img {
+            height: 30px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
             color: #fff;
             text-decoration: none;
         }
-        .login-form .options a:hover {
-            text-decoration: underline;
+        .main-content {
+            padding: 100px 20px;
+        }
+        .main-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .main-content a {
+            background-color: #f90;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
         footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            color: #fff;
-            font-size: 14px;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
+            background-color: #232f3e;
+            padding: 10px 20px;
+            color: #bbb;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-form">
-            <img src="logo.png" alt="Logo">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>Get Started</button>
-            <div class="options">
-                <label>
-                    <input type="checkbox"> Keep Logged In
-                </label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <div class="options">
-                <a href="#">Create Account</a>
-                <a href="#">Need Help?</a>
-            </div>
-        </div>
+    <header>
+        <img src="aws_logo.png" alt="AWS Logo">
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">Solutions</a>
+            <a href="#">Pricing</a>
+            <a href="#">Documentation</a>
+            <a href="#">Learn</a>
+            <a href="#">Support</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>AWS Free Tier</h1>
+        <p>Gain free, hands-on experience with the AWS products and services</p>
+        <a href="#">Create a Free Account</a>
     </div>
+
     <footer>
-        <p>© 2019 Key. All Rights Reserved | Design by <a href="https://w3layouts.com">W3layouts</a></p>
-        <p><a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        <p>&copy; 2024 Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
 
