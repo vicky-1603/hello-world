@@ -1,81 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Free Tier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-        }
-        header {
-            background-color: #232f3e;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header img {
-            height: 30px;
-        }
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .main-content {
-            padding: 100px 20px;
-        }
-        .main-content h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .main-content a {
-            background-color: #f90;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #232f3e;
-            padding: 10px 20px;
-            color: #bbb;
-        }
-    </style>
+      <title>HTML Login Form</title>
+      <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <img src="aws_logo.png" alt="AWS Logo">
-        <nav>
-            <a href="#">Products</a>
-            <a href="#">Solutions</a>
-            <a href="#">Pricing</a>
-            <a href="#">Documentation</a>
-            <a href="#">Learn</a>
-            <a href="#">Support</a>
-            <a href="#">Sign In</a>
-        </nav>
-    </header>
+      <div class="main">
+            <h1>GeeksforGeeks</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="first" 
+                         placeholder="Enter your Username" required>
 
-    <div class="main-content">
-        <h1>AWS Free Tier</h1>
-        <p>Gain free, hands-on experience with the AWS products and services</p>
-        <a href="#">Create a Free Account</a>
-    </div>
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Enter your Password" required>
 
-    <footer>
-        <p>&copy; 2024 Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
-    </footer>
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="#"
+                     style="text-decoration: none;">
+                        Create an account
+                  </a>
+            </p>
+      </div>
 </body>
+
 </html>
 
