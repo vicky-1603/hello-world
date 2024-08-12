@@ -3,124 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stunning Sign Up & Login Form</title>
+    <title>Login Page</title>
     <style>
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
             font-family: Arial, sans-serif;
-            background: url('background_image.png') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-color: #f5f5f5;
         }
         .container {
+            width: 100%;
+            height: 100vh;
             display: flex;
-            justify-content: space-between;
-            width: 80%;
-            max-width: 1000px;
+            justify-content: center;
+            align-items: center;
         }
-        .form-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            width: 45%;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            color: white;
+        .login-box {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .form-box h2 {
-            margin-bottom: 20px;
+        .login-box h2 {
+            margin: 0;
+            padding-bottom: 20px;
             font-size: 24px;
+            color: #333;
         }
-        .form-box input[type="text"], 
-        .form-box input[type="email"],
-        .form-box input[type="password"] {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            font-size: 14px;
+        .logo {
+            font-size: 50px;
+            margin-bottom: 20px;
         }
-        .form-box button {
+        .login-box form {
             width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            background-color: #e91e63;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
             color: white;
+            border: none;
+            border-radius: 4px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 10px;
         }
-        .form-box button:hover {
-            background-color: #d81b60;
+        .login-button:hover {
+            background-color: #555;
         }
-        .form-box .social-login {
+        .social-login {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
-            font-size: 14px;
         }
-        .form-box .social-login i {
-            margin: 0 10px;
+        .social-login button {
+            background-color: #eee;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
             cursor: pointer;
-        }
-        .form-box a {
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-        }
-        footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
+            font-size: 16px;
+            width: 30%;
             text-align: center;
-            color: white;
-            font-size: 14px;
+        }
+        .social-login button:hover {
+            background-color: #ddd;
+        }
+        .register {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .register a {
+            text-decoration: none;
+            color: #333;
+        }
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .forgot-password a {
+            text-decoration: none;
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="form-box">
-            <h2>Sign Up</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
+        <div class="login-box">
+            <div class="logo">W. <span style="color: green;">☺</span></div>
+            <h2>Welcome!</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" name="email" placeholder="Email or Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="keep-logged-in" id="keep-logged-in">
+                    <label for="keep-logged-in">Keep me logged in</label>
+                </div>
+                <button type="submit" class="login-button">Log in now</button>
             </form>
-            <div class="social-login">
-                <p>Or Login With</p>
-                <i class="fab fa-facebook-f">f</i>
-                <i class="fab fa-twitter">t</i>
-                <i class="fab fa-vk">v</i>
+            <div class="forgot-password">
+                <a href="#">Forgot your password?</a>
             </div>
-        </div>
-        <div class="form-box">
-            <h2>Login</h2>
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-            <a href="#">Forgot Password...?</a>
             <div class="social-login">
-                <p>Or Sign Up With</p>
-                <i class="fab fa-facebook-f">f</i>
-                <i class="fab fa-twitter">t</i>
-                <i class="fab fa-vk">v</i>
+                <button>Google</button>
+                <button>Facebook</button>
+                <button>Twitter</button>
+            </div>
+            <div class="register">
+                Not a member yet? <a href="#">Register now</a>
             </div>
         </div>
     </div>
-    <footer>
-        ©2018 Stunning sign up & login Form. All Rights Reserved | Design by W3Layouts
-    </footer>
 </body>
 </html>
 
